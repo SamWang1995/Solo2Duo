@@ -14,6 +14,8 @@
 		222800DE1C194C0400EBDCA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 222800DC1C194C0400EBDCA3 /* LaunchScreen.storyboard */; };
 		222800E91C194C0400EBDCA3 /* Solo2DuoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222800E81C194C0400EBDCA3 /* Solo2DuoTests.swift */; };
 		222800F41C194C0500EBDCA3 /* Solo2DuoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222800F31C194C0500EBDCA3 /* Solo2DuoUITests.swift */; };
+		222801031C194CAE00EBDCA3 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222801011C194CAE00EBDCA3 /* FBSDKCoreKit.framework */; };
+		222801041C194CAE00EBDCA3 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222801021C194CAE00EBDCA3 /* FBSDKLoginKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		222800EF1C194C0400EBDCA3 /* Solo2DuoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Solo2DuoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		222800F31C194C0500EBDCA3 /* Solo2DuoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solo2DuoUITests.swift; sourceTree = "<group>"; };
 		222800F51C194C0500EBDCA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		222801011C194CAE00EBDCA3 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		222801021C194CAE00EBDCA3 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				222801041C194CAE00EBDCA3 /* FBSDKLoginKit.framework in Frameworks */,
+				222801031C194CAE00EBDCA3 /* FBSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +103,8 @@
 		222800D21C194C0400EBDCA3 /* Solo2Duo */ = {
 			isa = PBXGroup;
 			children = (
+				222801011C194CAE00EBDCA3 /* FBSDKCoreKit.framework */,
+				222801021C194CAE00EBDCA3 /* FBSDKLoginKit.framework */,
 				222800D31C194C0400EBDCA3 /* AppDelegate.swift */,
 				222800D51C194C0400EBDCA3 /* ViewController.swift */,
 				222800D71C194C0400EBDCA3 /* Main.storyboard */,
@@ -397,6 +405,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Solo2Duo",
+				);
 				INFOPLIST_FILE = Solo2Duo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samwang.Solo2Duo;
@@ -408,6 +420,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Solo2Duo",
+				);
 				INFOPLIST_FILE = Solo2Duo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samwang.Solo2Duo;
