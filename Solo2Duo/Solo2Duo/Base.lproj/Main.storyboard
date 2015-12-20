@@ -85,7 +85,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUg-bg-tc0">
                                 <rect key="frame" x="169" y="384" width="61" height="43"/>
                                 <animations/>
-                                <state key="normal" title="Button" image="r.jpg"/>
+                                <state key="normal" title="Button" image="r 8.59.58 PM.jpg"/>
                             </button>
                             <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvv-UA-ALD">
                                 <rect key="frame" x="372" y="384" width="60" height="43"/>
@@ -104,7 +104,7 @@
     </scenes>
     <resources>
         <image name="48134-200.jpg" width="200" height="200"/>
-        <image name="r.jpg" width="200" height="200"/>
+        <image name="r 8.59.58 PM.jpg" width="200" height="200"/>
         <image name="video-gaming-women.jpg" width="600" height="400"/>
     </resources>
 </document>

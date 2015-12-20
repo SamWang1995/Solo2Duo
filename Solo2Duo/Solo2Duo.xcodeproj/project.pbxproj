@@ -17,8 +17,8 @@
 		222801031C194CAE00EBDCA3 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222801011C194CAE00EBDCA3 /* FBSDKCoreKit.framework */; };
 		222801041C194CAE00EBDCA3 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222801021C194CAE00EBDCA3 /* FBSDKLoginKit.framework */; };
 		BB22048E1C26653800AB42F0 /* video-gaming-women.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BB22048D1C26653800AB42F0 /* video-gaming-women.jpg */; };
-		BB2204941C266BF600AB42F0 /* r.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BB2204931C266BF600AB42F0 /* r.jpg */; };
 		BB2204961C266D1400AB42F0 /* 48134-200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BB2204951C266D1400AB42F0 /* 48134-200.jpg */; };
+		BB2204981C2688EE00AB42F0 /* r 8.59.58 PM.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BB2204971C2688EE00AB42F0 /* r 8.59.58 PM.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +55,8 @@
 		222801011C194CAE00EBDCA3 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		222801021C194CAE00EBDCA3 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		BB22048D1C26653800AB42F0 /* video-gaming-women.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "video-gaming-women.jpg"; path = "../../../video-gaming-women.jpg"; sourceTree = "<group>"; };
-		BB2204931C266BF600AB42F0 /* r.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = r.jpg; path = ../../../r.jpg; sourceTree = "<group>"; };
 		BB2204951C266D1400AB42F0 /* 48134-200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "48134-200.jpg"; path = "../../../48134-200.jpg"; sourceTree = "<group>"; };
+		BB2204971C2688EE00AB42F0 /* r 8.59.58 PM.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "r 8.59.58 PM.jpg"; path = "../../../r 8.59.58 PM.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,9 +115,9 @@
 				222800D51C194C0400EBDCA3 /* ViewController.swift */,
 				222800D71C194C0400EBDCA3 /* Main.storyboard */,
 				BB2204951C266D1400AB42F0 /* 48134-200.jpg */,
-				BB2204931C266BF600AB42F0 /* r.jpg */,
 				BB22048D1C26653800AB42F0 /* video-gaming-women.jpg */,
 				222800DA1C194C0400EBDCA3 /* Assets.xcassets */,
+				BB2204971C2688EE00AB42F0 /* r 8.59.58 PM.jpg */,
 				222800DC1C194C0400EBDCA3 /* LaunchScreen.storyboard */,
 				222800DF1C194C0400EBDCA3 /* Info.plist */,
 			);
@@ -246,10 +246,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB2204941C266BF600AB42F0 /* r.jpg in Resources */,
 				BB2204961C266D1400AB42F0 /* 48134-200.jpg in Resources */,
 				222800DE1C194C0400EBDCA3 /* LaunchScreen.storyboard in Resources */,
 				222800DB1C194C0400EBDCA3 /* Assets.xcassets in Resources */,
+				BB2204981C2688EE00AB42F0 /* r 8.59.58 PM.jpg in Resources */,
 				222800D91C194C0400EBDCA3 /* Main.storyboard in Resources */,
 				BB22048E1C26653800AB42F0 /* video-gaming-women.jpg in Resources */,
 			);
