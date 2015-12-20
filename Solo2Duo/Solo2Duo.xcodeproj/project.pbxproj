@@ -16,6 +16,7 @@
 		222800F41C194C0500EBDCA3 /* Solo2DuoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222800F31C194C0500EBDCA3 /* Solo2DuoUITests.swift */; };
 		222801031C194CAE00EBDCA3 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222801011C194CAE00EBDCA3 /* FBSDKCoreKit.framework */; };
 		222801041C194CAE00EBDCA3 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222801021C194CAE00EBDCA3 /* FBSDKLoginKit.framework */; };
+		BB22049C1C26970800AB42F0 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB22049B1C26970800AB42F0 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		222800F51C194C0500EBDCA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		222801011C194CAE00EBDCA3 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		222801021C194CAE00EBDCA3 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		BB2204991C26970700AB42F0 /* Solo2Duo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Solo2Duo-Bridging-Header.h"; sourceTree = "<group>"; };
+		BB22049A1C26970800AB42F0 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
+		BB22049B1C26970800AB42F0 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +111,13 @@
 				222801021C194CAE00EBDCA3 /* FBSDKLoginKit.framework */,
 				222800D31C194C0400EBDCA3 /* AppDelegate.swift */,
 				222800D51C194C0400EBDCA3 /* ViewController.swift */,
+				BB22049A1C26970800AB42F0 /* SWRevealViewController.h */,
+				BB22049B1C26970800AB42F0 /* SWRevealViewController.m */,
 				222800D71C194C0400EBDCA3 /* Main.storyboard */,
 				222800DA1C194C0400EBDCA3 /* Assets.xcassets */,
 				222800DC1C194C0400EBDCA3 /* LaunchScreen.storyboard */,
 				222800DF1C194C0400EBDCA3 /* Info.plist */,
+				BB2204991C26970700AB42F0 /* Solo2Duo-Bridging-Header.h */,
 			);
 			path = Solo2Duo;
 			sourceTree = "<group>";
@@ -266,6 +273,7 @@
 			files = (
 				222800D61C194C0400EBDCA3 /* ViewController.swift in Sources */,
 				222800D41C194C0400EBDCA3 /* AppDelegate.swift in Sources */,
+				BB22049C1C26970800AB42F0 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +413,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Solo2Duo",
@@ -413,6 +422,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samwang.Solo2Duo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Solo2Duo/Solo2Duo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -420,6 +431,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Solo2Duo",
@@ -428,6 +440,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samwang.Solo2Duo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Solo2Duo/Solo2Duo-Bridging-Header.h";
 			};
 			name = Release;
 		};
