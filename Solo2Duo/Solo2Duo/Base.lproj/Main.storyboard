@@ -54,6 +54,25 @@
             </objects>
         </scene>
         <!--View Controller-->
+        <scene sceneID="ajW-mO-pId">
+            <objects>
+                <viewController id="G00-Qg-ie4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="daS-dG-0Ds"/>
+                        <viewControllerLayoutGuide type="bottom" id="7nJ-8i-1LN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7M9-at-ShW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AP5-Zq-c4p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1770" y="213"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="QV4-aL-d0X">
             <objects>
                 <viewController id="8sV-bt-Mbb" sceneMemberID="viewController">
@@ -81,6 +100,9 @@
                                 <animations/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                 <state key="normal" title="edit my profile "/>
+                                <connections>
+                                    <segue destination="G00-Qg-ie4" kind="presentation" identifier="toEditProfile" id="54s-tW-f3I"/>
+                                </connections>
                             </button>
                             <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvv-UA-ALD">
                                 <rect key="frame" x="372" y="384" width="60" height="43"/>
@@ -99,7 +121,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pmh-kw-kAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1132" y="213"/>
+            <point key="canvasLocation" x="1028" y="213"/>
         </scene>
     </scenes>
     <resources>
