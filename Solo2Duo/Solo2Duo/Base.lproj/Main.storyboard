@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -24,18 +25,86 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video-gaming-women.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cQO-GE-mhF">
+                                <rect key="frame" x="180" y="206" width="240" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cQO-GE-mhF" secondAttribute="height" multiplier="15:8" id="73M-ut-7uh"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="cQO-GE-mhF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="186" id="CsT-Xm-hLX"/>
+                            <constraint firstItem="cQO-GE-mhF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DSs-tQ-RkF"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Yc6-Dq-Eu3" secondAttribute="bottom" constant="420" id="HI5-lh-U5E"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cQO-GE-mhF" secondAttribute="bottom" constant="266" id="hCD-Ju-DB2"/>
+                            <constraint firstItem="cQO-GE-mhF" firstAttribute="top" secondItem="Yc6-Dq-Eu3" secondAttribute="bottom" constant="26" id="jKP-HW-bfd"/>
                             <constraint firstItem="Yc6-Dq-Eu3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pEd-Fr-8id"/>
                             <constraint firstItem="Yc6-Dq-Eu3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="139" id="qGD-Ns-sNy"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="8sV-bt-Mbb" kind="presentation" identifier="showNew" id="ofV-Uv-KIc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="QV4-aL-d0X">
+            <objects>
+                <viewController id="8sV-bt-Mbb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KzF-gR-xwN"/>
+                        <viewControllerLayoutGuide type="bottom" id="vdh-pV-yqG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B1e-JC-cyu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Xc-TJ-Y3r">
+                                <rect key="frame" x="169" y="121" width="263" height="205"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hello, my name is bob and i like to play _____. i'm a easygoing person. " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFV-qB-8jn">
+                                <rect key="frame" x="137" y="334" width="326" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJf-0w-T9u">
+                                <rect key="frame" x="20" y="20" width="102" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <state key="normal" title="edit my profile "/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUg-bg-tc0">
+                                <rect key="frame" x="169" y="384" width="61" height="43"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="r.jpg"/>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvv-UA-ALD">
+                                <rect key="frame" x="372" y="384" width="60" height="43"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="48134-200.jpg"/>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pmh-kw-kAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1132" y="213"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="48134-200.jpg" width="200" height="200"/>
+        <image name="r.jpg" width="200" height="200"/>
+        <image name="video-gaming-women.jpg" width="600" height="400"/>
+    </resources>
 </document>
