@@ -25,7 +25,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video-gaming-women.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cQO-GE-mhF">
+                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainImage" translatesAutoresizingMaskIntoConstraints="NO" id="cQO-GE-mhF">
                                 <rect key="frame" x="180" y="206" width="240" height="128"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -82,15 +82,15 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                 <state key="normal" title="edit my profile "/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUg-bg-tc0">
-                                <rect key="frame" x="169" y="384" width="61" height="43"/>
-                                <animations/>
-                                <state key="normal" title="Button" image="r 8.59.58 PM.jpg"/>
-                            </button>
                             <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvv-UA-ALD">
                                 <rect key="frame" x="372" y="384" width="60" height="43"/>
                                 <animations/>
-                                <state key="normal" title="Button" image="48134-200.jpg"/>
+                                <state key="normal" title="Button" image="no"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUg-bg-tc0">
+                                <rect key="frame" x="169" y="384" width="61" height="43"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="yes"/>
                             </button>
                         </subviews>
                         <animations/>
@@ -103,8 +103,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="48134-200.jpg" width="200" height="200"/>
-        <image name="r 8.59.58 PM.jpg" width="200" height="200"/>
-        <image name="video-gaming-women.jpg" width="600" height="400"/>
+        <image name="mainImage" width="600" height="400"/>
+        <image name="no" width="200" height="200"/>
+        <image name="yes" width="200" height="200"/>
     </resources>
 </document>
