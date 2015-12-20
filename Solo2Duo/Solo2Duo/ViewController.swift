@@ -62,7 +62,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
             // should check if specific permissions missing
             if result.grantedPermissions.contains("email")
             {
-                performSegueWithIdentifier("toNext", sender: self)
+                performSegueWithIdentifier("showNew", sender: self)
                 // Do work
             }
         }
