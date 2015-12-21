@@ -52,7 +52,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="403" y="276"/>
+            <point key="canvasLocation" x="403" y="262"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="m5r-FX-Xhn">
@@ -89,23 +89,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvv-UA-ALD">
-                                <rect key="frame" x="372" y="406" width="60" height="43"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girl" translatesAutoresizingMaskIntoConstraints="NO" id="1Xc-TJ-Y3r">
+                                <rect key="frame" x="194" y="131" width="212" height="212"/>
                                 <animations/>
-                                <state key="normal" title="Button" image="no"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1Xc-TJ-Y3r" secondAttribute="height" multiplier="1:1" id="Zkp-1K-hkb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="jane doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ms-Kr-Fft">
+                                <rect key="frame" x="269" y="102" width="63" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvv-UA-ALD">
+                                <rect key="frame" x="123" y="213" width="48" height="47"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="xMark" backgroundImage="checkMark"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUg-bg-tc0">
-                                <rect key="frame" x="169" y="406" width="61" height="43"/>
+                                <rect key="frame" x="427" y="213" width="50" height="47"/>
                                 <animations/>
-                                <state key="normal" title="Button" image="yes"/>
+                                <state key="normal" title="Button" image="checkMark"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Xc-TJ-Y3r">
-                                <rect key="frame" x="169" y="121" width="263" height="205"/>
-                                <animations/>
-                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Xc-TJ-Y3r" firstAttribute="centerX" secondItem="B1e-JC-cyu" secondAttribute="centerX" id="3Ce-C7-5Zg"/>
+                            <constraint firstItem="1Xc-TJ-Y3r" firstAttribute="top" secondItem="KzF-gR-xwN" secondAttribute="bottom" constant="67" id="QN8-bM-5oj"/>
+                            <constraint firstItem="7Ms-Kr-Fft" firstAttribute="top" secondItem="KzF-gR-xwN" secondAttribute="bottom" constant="41" id="Z7V-Qn-QRO"/>
+                            <constraint firstItem="vdh-pV-yqG" firstAttribute="top" secondItem="1Xc-TJ-Y3r" secondAttribute="bottom" constant="257" id="huh-2F-1GQ"/>
+                            <constraint firstItem="7Ms-Kr-Fft" firstAttribute="centerX" secondItem="1Xc-TJ-Y3r" secondAttribute="centerX" id="ipn-aD-o85"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MGT-gZ-ge6">
                         <barButtonItem key="leftBarButtonItem" title="open" id="7XJ-is-36W"/>
@@ -116,7 +133,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pmh-kw-kAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2507" y="1049"/>
+            <point key="canvasLocation" x="2485" y="1049"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="XDj-RH-DGX">
@@ -147,7 +164,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ahq-Oo-QI2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1809" y="276"/>
+            <point key="canvasLocation" x="1809" y="262"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xCd-bZ-29Z">
@@ -168,8 +185,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="checkMark" width="200" height="200"/>
+        <image name="girl" width="600" height="600"/>
         <image name="mainImage" width="600" height="400"/>
-        <image name="no" width="200" height="200"/>
-        <image name="yes" width="200" height="200"/>
+        <image name="xMark" width="200" height="200"/>
     </resources>
 </document>
