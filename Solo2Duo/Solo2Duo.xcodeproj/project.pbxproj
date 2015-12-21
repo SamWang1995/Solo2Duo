@@ -16,6 +16,10 @@
 		222800F41C194C0500EBDCA3 /* Solo2DuoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222800F31C194C0500EBDCA3 /* Solo2DuoUITests.swift */; };
 		222801031C194CAE00EBDCA3 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222801011C194CAE00EBDCA3 /* FBSDKCoreKit.framework */; };
 		222801041C194CAE00EBDCA3 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222801021C194CAE00EBDCA3 /* FBSDKLoginKit.framework */; };
+		BB1F77771C28735700ABDCE9 /* BackTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1F77761C28735700ABDCE9 /* BackTableVC.swift */; };
+		BB1F77791C28816100ABDCE9 /* profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1F77781C28816100ABDCE9 /* profile.swift */; };
+		BB1F777B1C2882FF00ABDCE9 /* matches.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1F777A1C2882FF00ABDCE9 /* matches.swift */; };
+		BB1F777D1C28830A00ABDCE9 /* messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1F777C1C28830A00ABDCE9 /* messages.swift */; };
 		BB22049C1C26970800AB42F0 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB22049B1C26970800AB42F0 /* SWRevealViewController.m */; };
 		BB2204A01C2799B100AB42F0 /* SlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB22049F1C2799B100AB42F0 /* SlideViewController.swift */; };
 /* End PBXBuildFile section */
@@ -53,6 +57,10 @@
 		222800F51C194C0500EBDCA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		222801011C194CAE00EBDCA3 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		222801021C194CAE00EBDCA3 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		BB1F77761C28735700ABDCE9 /* BackTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackTableVC.swift; sourceTree = "<group>"; };
+		BB1F77781C28816100ABDCE9 /* profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profile.swift; sourceTree = "<group>"; };
+		BB1F777A1C2882FF00ABDCE9 /* matches.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = matches.swift; sourceTree = "<group>"; };
+		BB1F777C1C28830A00ABDCE9 /* messages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = messages.swift; sourceTree = "<group>"; };
 		BB2204991C26970700AB42F0 /* Solo2Duo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Solo2Duo-Bridging-Header.h"; sourceTree = "<group>"; };
 		BB22049A1C26970800AB42F0 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
 		BB22049B1C26970800AB42F0 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
@@ -111,16 +119,20 @@
 			children = (
 				222801011C194CAE00EBDCA3 /* FBSDKCoreKit.framework */,
 				222801021C194CAE00EBDCA3 /* FBSDKLoginKit.framework */,
+				222800D71C194C0400EBDCA3 /* Main.storyboard */,
 				222800D31C194C0400EBDCA3 /* AppDelegate.swift */,
 				222800D51C194C0400EBDCA3 /* ViewController.swift */,
 				BB22049F1C2799B100AB42F0 /* SlideViewController.swift */,
+				BB1F77761C28735700ABDCE9 /* BackTableVC.swift */,
+				BB1F77781C28816100ABDCE9 /* profile.swift */,
+				BB1F777A1C2882FF00ABDCE9 /* matches.swift */,
+				BB1F777C1C28830A00ABDCE9 /* messages.swift */,
+				BB2204991C26970700AB42F0 /* Solo2Duo-Bridging-Header.h */,
 				BB22049A1C26970800AB42F0 /* SWRevealViewController.h */,
 				BB22049B1C26970800AB42F0 /* SWRevealViewController.m */,
-				222800D71C194C0400EBDCA3 /* Main.storyboard */,
 				222800DA1C194C0400EBDCA3 /* Assets.xcassets */,
 				222800DC1C194C0400EBDCA3 /* LaunchScreen.storyboard */,
 				222800DF1C194C0400EBDCA3 /* Info.plist */,
-				BB2204991C26970700AB42F0 /* Solo2Duo-Bridging-Header.h */,
 			);
 			path = Solo2Duo;
 			sourceTree = "<group>";
@@ -274,8 +286,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB1F777B1C2882FF00ABDCE9 /* matches.swift in Sources */,
+				BB1F777D1C28830A00ABDCE9 /* messages.swift in Sources */,
 				BB2204A01C2799B100AB42F0 /* SlideViewController.swift in Sources */,
+				BB1F77771C28735700ABDCE9 /* BackTableVC.swift in Sources */,
 				222800D61C194C0400EBDCA3 /* ViewController.swift in Sources */,
+				BB1F77791C28816100ABDCE9 /* profile.swift in Sources */,
 				222800D41C194C0400EBDCA3 /* AppDelegate.swift in Sources */,
 				BB22049C1C26970800AB42F0 /* SWRevealViewController.m in Sources */,
 			);

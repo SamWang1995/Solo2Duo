@@ -16,6 +16,8 @@ class SlideViewController: UIViewController {
         super.viewDidLoad()
         open.target = self.revealViewController()
         open.action = Selector("revealToggle:")
+        
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer()) //now can open the menu by just dragging your finger from left to right on the screen
     }
 
     override func didReceiveMemoryWarning() {
