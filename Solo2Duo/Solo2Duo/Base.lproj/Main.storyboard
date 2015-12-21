@@ -52,7 +52,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="403" y="262"/>
+            <point key="canvasLocation" x="462" y="262"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="m5r-FX-Xhn">
@@ -151,7 +151,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pmh-kw-kAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2376" y="1049"/>
+            <point key="canvasLocation" x="2350" y="1049"/>
         </scene>
         <!--Back TableVC-->
         <scene sceneID="XDj-RH-DGX">
@@ -200,6 +200,19 @@
                                 <animations/>
                                 <connections>
                                     <segue destination="cHQ-MP-ib1" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="htH-by-8Sh"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="find more matches" id="vgq-yZ-S8g">
+                                <rect key="frame" x="0.0" y="160" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vgq-yZ-S8g" id="wzA-wn-zkL">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <segue destination="8sV-bt-Mbb" kind="custom" customClass="SWRevealViewControllerSegueSetController" id="3D3-DG-fp6"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -321,4 +334,7 @@
         <image name="mainImage" width="600" height="400"/>
         <image name="xMark" width="200" height="200"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="3D3-DG-fp6"/>
+    </inferredMetricsTieBreakers>
 </document>
