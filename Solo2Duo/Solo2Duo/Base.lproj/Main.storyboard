@@ -47,7 +47,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="F9O-mx-GU8" kind="presentation" id="Z5l-3a-8hg"/>
+                        <segue destination="F9O-mx-GU8" kind="presentation" identifier="showNew" id="Z5l-3a-8hg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -75,7 +75,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DbG-mC-VuL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1103" y="276"/>
+            <point key="canvasLocation" x="1101" y="262"/>
         </scene>
         <!--Slide View Controller-->
         <scene sceneID="QV4-aL-d0X">
@@ -116,7 +116,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pmh-kw-kAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2455" y="1049"/>
+            <point key="canvasLocation" x="2507" y="1049"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="XDj-RH-DGX">
