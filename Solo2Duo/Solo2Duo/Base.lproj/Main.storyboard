@@ -96,6 +96,15 @@
                                     <constraint firstAttribute="width" secondItem="1Xc-TJ-Y3r" secondAttribute="height" multiplier="1:1" id="Zkp-1K-hkb"/>
                                 </constraints>
                             </imageView>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvv-UA-ALD">
+                                <rect key="frame" x="123" y="213" width="48" height="47"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zvv-UA-ALD" secondAttribute="height" multiplier="48:47" id="LFd-V2-amf"/>
+                                    <constraint firstAttribute="width" secondItem="zvv-UA-ALD" secondAttribute="height" multiplier="48:47" id="dgF-HA-mkg"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="xMark" backgroundImage="checkMark"/>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="jane doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ms-Kr-Fft">
                                 <rect key="frame" x="269" y="102" width="63" height="21"/>
                                 <animations/>
@@ -103,14 +112,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvv-UA-ALD">
-                                <rect key="frame" x="123" y="213" width="48" height="47"/>
-                                <animations/>
-                                <state key="normal" title="Button" image="xMark" backgroundImage="checkMark"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUg-bg-tc0">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUg-bg-tc0">
                                 <rect key="frame" x="427" y="213" width="50" height="47"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bUg-bg-tc0" secondAttribute="height" multiplier="50:47" id="IVa-Jg-Dwb"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="checkMark"/>
                             </button>
                         </subviews>
@@ -118,10 +125,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="1Xc-TJ-Y3r" firstAttribute="centerX" secondItem="B1e-JC-cyu" secondAttribute="centerX" id="3Ce-C7-5Zg"/>
+                            <constraint firstItem="zvv-UA-ALD" firstAttribute="top" secondItem="KzF-gR-xwN" secondAttribute="bottom" constant="149" id="BY4-Le-205"/>
+                            <constraint firstItem="7Ms-Kr-Fft" firstAttribute="centerX" secondItem="1Xc-TJ-Y3r" secondAttribute="centerX" id="CX4-kK-LJi"/>
+                            <constraint firstItem="vdh-pV-yqG" firstAttribute="top" secondItem="zvv-UA-ALD" secondAttribute="bottom" constant="340" id="EFZ-S1-1hr"/>
                             <constraint firstItem="1Xc-TJ-Y3r" firstAttribute="top" secondItem="KzF-gR-xwN" secondAttribute="bottom" constant="67" id="QN8-bM-5oj"/>
-                            <constraint firstItem="7Ms-Kr-Fft" firstAttribute="top" secondItem="KzF-gR-xwN" secondAttribute="bottom" constant="41" id="Z7V-Qn-QRO"/>
+                            <constraint firstItem="vdh-pV-yqG" firstAttribute="top" secondItem="bUg-bg-tc0" secondAttribute="bottom" constant="340" id="TB9-Tj-7CE"/>
+                            <constraint firstItem="bUg-bg-tc0" firstAttribute="top" secondItem="KzF-gR-xwN" secondAttribute="bottom" constant="149" id="Yfq-C0-fhc"/>
                             <constraint firstItem="vdh-pV-yqG" firstAttribute="top" secondItem="1Xc-TJ-Y3r" secondAttribute="bottom" constant="257" id="huh-2F-1GQ"/>
-                            <constraint firstItem="7Ms-Kr-Fft" firstAttribute="centerX" secondItem="1Xc-TJ-Y3r" secondAttribute="centerX" id="ipn-aD-o85"/>
+                            <constraint firstItem="bUg-bg-tc0" firstAttribute="leading" secondItem="1Xc-TJ-Y3r" secondAttribute="trailing" constant="21" id="pPI-EG-QCt"/>
+                            <constraint firstItem="1Xc-TJ-Y3r" firstAttribute="leading" secondItem="zvv-UA-ALD" secondAttribute="trailing" constant="23" id="scc-rj-QJW"/>
+                            <constraint firstItem="7Ms-Kr-Fft" firstAttribute="top" secondItem="KzF-gR-xwN" secondAttribute="bottom" constant="38" id="uUw-bR-D9P"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MGT-gZ-ge6">
