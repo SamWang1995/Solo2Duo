@@ -17,6 +17,7 @@
 		222801031C194CAE00EBDCA3 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222801011C194CAE00EBDCA3 /* FBSDKCoreKit.framework */; };
 		222801041C194CAE00EBDCA3 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222801021C194CAE00EBDCA3 /* FBSDKLoginKit.framework */; };
 		BB22049C1C26970800AB42F0 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB22049B1C26970800AB42F0 /* SWRevealViewController.m */; };
+		BB2204A01C2799B100AB42F0 /* SlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB22049F1C2799B100AB42F0 /* SlideViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		BB2204991C26970700AB42F0 /* Solo2Duo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Solo2Duo-Bridging-Header.h"; sourceTree = "<group>"; };
 		BB22049A1C26970800AB42F0 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
 		BB22049B1C26970800AB42F0 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
+		BB22049F1C2799B100AB42F0 /* SlideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideViewController.swift; path = ../SlideViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				222801021C194CAE00EBDCA3 /* FBSDKLoginKit.framework */,
 				222800D31C194C0400EBDCA3 /* AppDelegate.swift */,
 				222800D51C194C0400EBDCA3 /* ViewController.swift */,
+				BB22049F1C2799B100AB42F0 /* SlideViewController.swift */,
 				BB22049A1C26970800AB42F0 /* SWRevealViewController.h */,
 				BB22049B1C26970800AB42F0 /* SWRevealViewController.m */,
 				222800D71C194C0400EBDCA3 /* Main.storyboard */,
@@ -271,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB2204A01C2799B100AB42F0 /* SlideViewController.swift in Sources */,
 				222800D61C194C0400EBDCA3 /* ViewController.swift in Sources */,
 				222800D41C194C0400EBDCA3 /* AppDelegate.swift in Sources */,
 				BB22049C1C26970800AB42F0 /* SWRevealViewController.m in Sources */,

@@ -13,13 +13,6 @@ import FBSDKLoginKit
 class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     @IBOutlet var open: UIBarButtonItem!
     
-    override func viewDidLoad() {
-        super.viewDidLoad();
-        open.target = self.revealViewController()
-        open.action = Selector("revealToggle:")
-        
-    }
-    
     override func viewDidAppear(animated: Bool) {
         
         super.viewDidAppear(animated)
