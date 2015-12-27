@@ -174,7 +174,7 @@
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
-                                    <segue destination="dAO-wo-SCp" kind="show" id="FlS-09-ICw"/>
+                                    <segue destination="dAO-wo-SCp" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="fte-ZI-igm"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="matches" id="C5F-lr-ShK">
@@ -187,7 +187,7 @@
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
-                                    <segue destination="8Mz-Xb-jka" kind="show" id="tpj-Rx-8lf"/>
+                                    <segue destination="8Mz-Xb-jka" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="fvh-PT-bj2"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="messages" id="HlV-nF-rnn">
@@ -200,7 +200,7 @@
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
-                                    <segue destination="f4r-JC-vgj" kind="show" id="cYB-ml-aD4"/>
+                                    <segue destination="f4r-JC-vgj" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="eXM-Yo-hEf"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="find more matches" id="vgq-yZ-S8g">
@@ -213,7 +213,7 @@
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
-                                    <segue destination="8sV-bt-Mbb" kind="show" id="7KE-iE-gA9"/>
+                                    <segue destination="8sV-bt-Mbb" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="0cb-d0-4T1"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -449,6 +449,6 @@
         <image name="xMark" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7KE-iE-gA9"/>
+        <segue reference="0cb-d0-4T1"/>
     </inferredMetricsTieBreakers>
 </document>
