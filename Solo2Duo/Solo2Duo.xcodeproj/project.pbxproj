@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		221C8B311C2FD2D800DA7D65 /* MainUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221C8B301C2FD2D800DA7D65 /* MainUser.swift */; };
+		221C8B371C2FD47200DA7D65 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221C8B361C2FD47200DA7D65 /* Messages.swift */; };
+		221C8B391C2FD9AF00DA7D65 /* MessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221C8B381C2FD9AF00DA7D65 /* MessagesTableViewController.swift */; };
 		222800D41C194C0400EBDCA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222800D31C194C0400EBDCA3 /* AppDelegate.swift */; };
 		222800D61C194C0400EBDCA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222800D51C194C0400EBDCA3 /* ViewController.swift */; };
 		222800D91C194C0400EBDCA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 222800D71C194C0400EBDCA3 /* Main.storyboard */; };
@@ -19,7 +22,6 @@
 		BB1F77771C28735700ABDCE9 /* BackTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1F77761C28735700ABDCE9 /* BackTableVC.swift */; };
 		BB1F77791C28816100ABDCE9 /* profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1F77781C28816100ABDCE9 /* profile.swift */; };
 		BB1F777B1C2882FF00ABDCE9 /* matches.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1F777A1C2882FF00ABDCE9 /* matches.swift */; };
-		BB1F777D1C28830A00ABDCE9 /* messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1F777C1C28830A00ABDCE9 /* messages.swift */; };
 		BB22049C1C26970800AB42F0 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB22049B1C26970800AB42F0 /* SWRevealViewController.m */; };
 		BB2204A01C2799B100AB42F0 /* SlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB22049F1C2799B100AB42F0 /* SlideViewController.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		221C8B301C2FD2D800DA7D65 /* MainUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainUser.swift; sourceTree = "<group>"; };
+		221C8B361C2FD47200DA7D65 /* Messages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
+		221C8B381C2FD9AF00DA7D65 /* MessagesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesTableViewController.swift; sourceTree = "<group>"; };
 		222800D01C194C0400EBDCA3 /* Solo2Duo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Solo2Duo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		222800D31C194C0400EBDCA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		222800D51C194C0400EBDCA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +65,6 @@
 		BB1F77761C28735700ABDCE9 /* BackTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackTableVC.swift; sourceTree = "<group>"; };
 		BB1F77781C28816100ABDCE9 /* profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profile.swift; sourceTree = "<group>"; };
 		BB1F777A1C2882FF00ABDCE9 /* matches.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = matches.swift; sourceTree = "<group>"; };
-		BB1F777C1C28830A00ABDCE9 /* messages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = messages.swift; sourceTree = "<group>"; };
 		BB2204991C26970700AB42F0 /* Solo2Duo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Solo2Duo-Bridging-Header.h"; sourceTree = "<group>"; };
 		BB22049A1C26970800AB42F0 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
 		BB22049B1C26970800AB42F0 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
@@ -121,12 +125,14 @@
 				222801021C194CAE00EBDCA3 /* FBSDKLoginKit.framework */,
 				222800D71C194C0400EBDCA3 /* Main.storyboard */,
 				222800D31C194C0400EBDCA3 /* AppDelegate.swift */,
+				221C8B301C2FD2D800DA7D65 /* MainUser.swift */,
 				222800D51C194C0400EBDCA3 /* ViewController.swift */,
+				221C8B381C2FD9AF00DA7D65 /* MessagesTableViewController.swift */,
+				221C8B361C2FD47200DA7D65 /* Messages.swift */,
 				BB22049F1C2799B100AB42F0 /* SlideViewController.swift */,
 				BB1F77761C28735700ABDCE9 /* BackTableVC.swift */,
 				BB1F77781C28816100ABDCE9 /* profile.swift */,
 				BB1F777A1C2882FF00ABDCE9 /* matches.swift */,
-				BB1F777C1C28830A00ABDCE9 /* messages.swift */,
 				BB2204991C26970700AB42F0 /* Solo2Duo-Bridging-Header.h */,
 				BB22049A1C26970800AB42F0 /* SWRevealViewController.h */,
 				BB22049B1C26970800AB42F0 /* SWRevealViewController.m */,
@@ -286,12 +292,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				221C8B311C2FD2D800DA7D65 /* MainUser.swift in Sources */,
 				BB1F777B1C2882FF00ABDCE9 /* matches.swift in Sources */,
-				BB1F777D1C28830A00ABDCE9 /* messages.swift in Sources */,
 				BB2204A01C2799B100AB42F0 /* SlideViewController.swift in Sources */,
+				221C8B391C2FD9AF00DA7D65 /* MessagesTableViewController.swift in Sources */,
 				BB1F77771C28735700ABDCE9 /* BackTableVC.swift in Sources */,
 				222800D61C194C0400EBDCA3 /* ViewController.swift in Sources */,
 				BB1F77791C28816100ABDCE9 /* profile.swift in Sources */,
+				221C8B371C2FD47200DA7D65 /* Messages.swift in Sources */,
 				222800D41C194C0400EBDCA3 /* AppDelegate.swift in Sources */,
 				BB22049C1C26970800AB42F0 /* SWRevealViewController.m in Sources */,
 			);

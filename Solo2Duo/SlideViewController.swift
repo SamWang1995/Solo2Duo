@@ -9,7 +9,7 @@
 import UIKit
 
 class SlideViewController: UIViewController {
-
+    
     @IBOutlet var open: UIBarButtonItem!
     
     override func viewDidLoad() {

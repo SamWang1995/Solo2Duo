@@ -10,6 +10,6 @@ import Foundation
 
 class profile : UIViewController {
     override func viewDidLoad() {
-        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer()) //let's you go back with gesture
+        //self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer()) //let's you go back with gesture
     }
 }
