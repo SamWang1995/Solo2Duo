@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     {
         // Override point for customization after application launch.
         
-        
+        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [UIUserNotificationType.Alert, UIUserNotificationType.Badge, UIUserNotificationType.Sound], categories: nil))
         return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
     }
     
@@ -36,6 +36,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        var timer = NSTimer()
+        let date = NSDate()
+        let dateFormatter = NSDateFormatter()
+        let timeFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
+        timeFormatter.timeStyle = NSDateFormatterStyle.ShortStyle
+        dateFormatter.stringFromDate(date)
+        timeFormatter.stringFromDate(date)
+        print(timeFormatter.stringFromDate(date))
+        if(timeFormatter.stringFromDate(date) == "4:43 PM"){
+            timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("Notification"), userInfo: nil, repeats: true)
+        }
     }
     
     func applicationWillEnterForeground(application: UIApplication) {

@@ -11,7 +11,13 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 
 class ViewController: UIViewController, FBSDKLoginButtonDelegate {
+    
+    
     @IBOutlet var open: UIBarButtonItem!
+    
+    override func viewDidLoad() {
+
+    }
     
     override func viewDidAppear(animated: Bool) {
         
@@ -31,9 +37,24 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
             loginView.delegate = self
         }
         
+        let AlertView = UIAlertController(title: "Bruhh..", message: "R U Okay?", preferredStyle: UIAlertControllerStyle.Alert)
+        AlertView.addAction(UIAlertAction(title: "Don't Try Again.", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(AlertView, animated: true, completion: nil)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+    }
+    
+    func Notification(){
+        
+        let Notification = UILocalNotification()
+        Notification.alertAction = "Come Back!"
+        Notification.alertBody = "SAM IS THE COOLEST KID EVER"
+        
+        Notification.fireDate = NSDate(timeIntervalSinceNow: 0)
+        
+        UIApplication.sharedApplication().scheduleLocalNotification(Notification)
         
     }
     
