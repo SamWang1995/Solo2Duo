@@ -49,12 +49,12 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     func Notification(){
         
         let Notification = UILocalNotification()
-        Notification.alertAction = "Come Back!"
-        Notification.alertBody = "SAM IS THE COOLEST KID EVER"
+        Notification.alertAction = "Come Back!" //what it does
+        Notification.alertBody = "SAM IS THE COOLEST KID EVER" //what it displays
         
-        Notification.fireDate = NSDate(timeIntervalSinceNow: 0)
+        Notification.fireDate = NSDate(timeIntervalSinceNow: 0) //fires after 0 seconds so automaticallyy
         
-        UIApplication.sharedApplication().scheduleLocalNotification(Notification)
+        UIApplication.sharedApplication().scheduleLocalNotification(Notification) //allows it to be called outside of the app
         
     }
     
