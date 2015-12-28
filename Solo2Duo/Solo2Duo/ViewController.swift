@@ -14,9 +14,20 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     
     @IBOutlet var open: UIBarButtonItem!
+    var timer = NSTimer()
     
     override func viewDidLoad() {
-
+        let date = NSDate()
+        let dateFormatter = NSDateFormatter()
+        let timeFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
+        timeFormatter.timeStyle = NSDateFormatterStyle.ShortStyle
+        dateFormatter.stringFromDate(date)
+        timeFormatter.stringFromDate(date)
+        print(timeFormatter.stringFromDate(date))
+        if(timeFormatter.stringFromDate(date) == "8:00 PM"){
+            timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("Notification"), userInfo: nil, repeats: true)
+        }
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -55,6 +66,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         Notification.fireDate = NSDate(timeIntervalSinceNow: 0) //fires after 0 seconds so automaticallyy
         
         UIApplication.sharedApplication().scheduleLocalNotification(Notification) //allows it to be called outside of the app
+        timer.invalidate()
         
     }
     
