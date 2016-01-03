@@ -14,6 +14,8 @@ class MatchesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+          glblUser.matches.append(Matches(personName: "john doe"))
+         data = [glblUser.matches[0].personName]
         // Do any additional setup after loading the view.
     }
     
@@ -24,10 +26,10 @@ class MatchesTableViewController: UITableViewController {
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Sam Wang", forIndexPath: indexPath)
+        let BettyJing = tableView.dequeueReusableCellWithIdentifier("BettyJing", forIndexPath: indexPath) as UITableViewCell
         
-        cell.textLabel?.text = data[indexPath.row]
-        return cell
+        BettyJing.textLabel?.text = data[indexPath.row]
+        return BettyJing 
     }
     
     override func didReceiveMemoryWarning() {
