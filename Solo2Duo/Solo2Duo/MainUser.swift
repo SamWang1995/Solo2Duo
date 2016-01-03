@@ -14,7 +14,7 @@ class mainUser{
     var lastName = ""
     
     //arrays
-    //var matches = [friends]()   Create the class for matches and this will be the array you use to append.
+    var matches = [Matches]()
     var messages = [Messages]()
     
     //initializer
