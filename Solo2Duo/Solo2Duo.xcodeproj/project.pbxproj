@@ -19,6 +19,8 @@
 		222800F41C194C0500EBDCA3 /* Solo2DuoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222800F31C194C0500EBDCA3 /* Solo2DuoUITests.swift */; };
 		222801031C194CAE00EBDCA3 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222801011C194CAE00EBDCA3 /* FBSDKCoreKit.framework */; };
 		222801041C194CAE00EBDCA3 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222801021C194CAE00EBDCA3 /* FBSDKLoginKit.framework */; };
+		BB0F3B631C3B0638005B85B3 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB0F3B621C3B0638005B85B3 /* Bolts.framework */; };
+		BB0F3B651C3B0640005B85B3 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB0F3B641C3B0640005B85B3 /* Parse.framework */; };
 		BB1D34501C39A13500362BC3 /* vwTblCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB1D344F1C39A13500362BC3 /* vwTblCell.xib */; };
 		BB1D34521C39A56A00362BC3 /* TblCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D34511C39A56A00362BC3 /* TblCell.swift */; };
 		BB1F77771C28735700ABDCE9 /* BackTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1F77761C28735700ABDCE9 /* BackTableVC.swift */; };
@@ -65,6 +67,8 @@
 		222800F51C194C0500EBDCA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		222801011C194CAE00EBDCA3 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		222801021C194CAE00EBDCA3 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		BB0F3B621C3B0638005B85B3 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		BB0F3B641C3B0640005B85B3 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		BB1D344F1C39A13500362BC3 /* vwTblCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = vwTblCell.xib; sourceTree = "<group>"; };
 		BB1D34511C39A56A00362BC3 /* TblCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TblCell.swift; path = ../TblCell.swift; sourceTree = "<group>"; };
 		BB1F77761C28735700ABDCE9 /* BackTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackTableVC.swift; sourceTree = "<group>"; };
@@ -82,7 +86,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB0F3B631C3B0638005B85B3 /* Bolts.framework in Frameworks */,
 				222801041C194CAE00EBDCA3 /* FBSDKLoginKit.framework in Frameworks */,
+				BB0F3B651C3B0640005B85B3 /* Parse.framework in Frameworks */,
 				222801031C194CAE00EBDCA3 /* FBSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,6 +133,8 @@
 		222800D21C194C0400EBDCA3 /* Solo2Duo */ = {
 			isa = PBXGroup;
 			children = (
+				BB0F3B641C3B0640005B85B3 /* Parse.framework */,
+				BB0F3B621C3B0638005B85B3 /* Bolts.framework */,
 				222801011C194CAE00EBDCA3 /* FBSDKCoreKit.framework */,
 				222801021C194CAE00EBDCA3 /* FBSDKLoginKit.framework */,
 				222800D71C194C0400EBDCA3 /* Main.storyboard */,
